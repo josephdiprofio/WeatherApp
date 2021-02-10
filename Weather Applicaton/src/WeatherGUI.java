@@ -212,12 +212,12 @@ public class WeatherGUI {
 		
 		try {	//is a zipcode string.
 			if (Character.isDigit(chars[0])) {
-				urlString= ("https://api.openweathermap.org/data/2.5/weather?zip="+searchText+"&units=imperial&appid=f004d182721cc9bb2ecdfdd58134a7dc");
+				urlString= ("https://api.openweathermap.org/data/2.5/weather?zip="+searchText+"&units=imperial&appid=insertapikeyhere");
 			}
 			
 			//is a city string.
 			else {
-				urlString= ("https://api.openweathermap.org/data/2.5/weather?q="+searchText+"&units=imperial&appid=f004d182721cc9bb2ecdfdd58134a7dc");
+				urlString= ("https://api.openweathermap.org/data/2.5/weather?q="+searchText+"&units=imperial&appid=insertapikeyhere");
 			}
 			
 			URL url = new URL(urlString);
